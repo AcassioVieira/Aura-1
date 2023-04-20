@@ -1,0 +1,16 @@
+ONTROLER
+
+({
+	aviso : function(component, event, helper) {     
+     
+        var toastEvent = $A.get("e.force:showToast");
+       	
+        toastEvent.setParams({
+            title: 'Processo de inclusão realizado com sucesso',
+            message: 'Deu certo moral',
+            type: 'success'
+        });
+    toastEvent.fire();
+
+    }
+})
